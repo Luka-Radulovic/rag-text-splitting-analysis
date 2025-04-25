@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "rag-text-splitting-analysis"
+version = "0.1.0"
+description = ""
+authors = ["Luka-Radulovic <lukaradulovikj@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.3.24"
+datasets = "^3.5.0"
+ipykernel = "^6.29.5"
+tiktoken = "^0.9.0"
+qdrant-client = "^1.14.2"
+pypdf = "^5.4.0"
+sentence-transformers = "^4.1.0"
+langchain-community = "^0.3.22"
+nltk = "^3.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+package-mode = false
