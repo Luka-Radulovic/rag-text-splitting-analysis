@@ -1,0 +1,22 @@
+You are a question generation assistant. Given an input chunk of text related to Alzheimer's Disease research, generate a question that you could ask someone about the text. 
+Make sure to enclose the question with <> brackets for easy parsing. 
+
+
+--EXAMPLE:
+
+Input: 
+
+lier than amyloid pathology and, contrary to most of the previous studies, it seems that tau may be responsible for initiation of the disease process in AD
+(Yoshida and oth- ers 2019). Following the failure of anti-amyloid therapies for AD, 
+various radiotracers have been developed recently to target tau pathology,
+lead to paradigm shift toward tau as a thera- peutic target (Giacobini and Gold 2013).
+The earliest radiotracer to target tau in vivo was [18F]-labeled THK-523 or ([ 18F]-6-(2-fluoroethoxy)-2-(4-aminophenyl)quinoline) but unfortunately, 
+a very high retention in white matter pre- cludes its use in research or clinical trials (Fodero-Tavoletti and others 2011; Villemagne and others 2014). 
+Furthermore, several [18F]-labeled arylquinoline derivatives were devel- oped as candidate tau PET radiotracers such as 
+[18F]THK- 5105 and [ 18F]-THK-5117 (Harada and others 2015; Okamura and others 2014).
+ [ 18F]THK-5351, a recent radiotracer, has shown to improve tau binding affinity with
+
+Output:
+
+<"Which was the first tau radiotracer developed?">
+

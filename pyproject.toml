@@ -16,6 +16,8 @@ pypdf = "^5.4.0"
 sentence-transformers = "^4.1.0"
 langchain-community = "^0.3.22"
 nltk = "^3.9.1"
+langchain-ollama = "^0.3.2"
+langchain-qdrant = "^0.2.0"
 
 
 [build-system]

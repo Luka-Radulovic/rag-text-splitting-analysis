@@ -13,11 +13,14 @@ from qdrant_client import QdrantClient
 from tqdm import tqdm
 
 PDF_FOLDER = Path("pdfs")
+
 CHUNK_STRATEGIES = {
     "recursive": RecursiveCharacterTextSplitter,
-    "char": CharacterTextSplitter,
+    "char_fullstop": CharacterTextSplitter,
+    "char_newline": CharacterTextSplitter,
     "nltk": NLTKTextSplitter,
 }
+
 CHUNK_CONFIGS = [
     {"chunk_size": 512, "chunk_overlap": 128},
     {"chunk_size": 1024, "chunk_overlap": 256},
@@ -40,8 +43,24 @@ def load_pdfs(pdf_folder: Path) -> List[str]:
 
 def get_splitter(strategy_name: str, chunk_size: int, chunk_overlap: int):
     splitter_cls = CHUNK_STRATEGIES[strategy_name]
+    
     if strategy_name == "nltk":
         return splitter_cls(chunk_size=chunk_size)
+    
+    if strategy_name == "char_fullstop":
+        return splitter_cls(
+            separator=".", 
+            chunk_size=chunk_size, 
+            chunk_overlap=chunk_overlap
+        )
+    
+    if strategy_name == "char_newline":
+        return splitter_cls(
+            separator="\n", 
+            chunk_size=chunk_size, 
+            chunk_overlap=chunk_overlap
+        )
+    
     return splitter_cls(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
 
 
