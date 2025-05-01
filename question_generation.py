@@ -9,7 +9,7 @@ from tqdm import tqdm
 import re 
 
 
-COLLECTION_NAME = "recursive_1024_256"
+COLLECTION_NAME = "recursive_1024_256" # will be excluded from final evaluation 
 QDRANT_HOST = "localhost"
 QDRANT_PORT = 6333
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
