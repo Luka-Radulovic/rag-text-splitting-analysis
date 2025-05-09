@@ -1,0 +1,38 @@
+{
+  "char_fullstop_1024_256": {
+    "answer_relevancy": 0.762832925711077,
+    "faithfulness": 0.7049923489209203,
+    "contextual_relevancy": 0.5467302258898897
+  },
+
+  "char_fullstop_512_128": {
+    "answer_relevancy": 0.7434752747252747,
+    "faithfulness": 0.7139087301587301,
+    "contextual_relevancy": 0.4900137974770328
+  },
+  "char_newline_1024_256": {
+    "answer_relevancy": 0.7631046689317367,
+    "faithfulness": 0.7163958175862938,
+    "contextual_relevancy": 0.5130623267177888
+  },
+  "char_newline_512_128": {
+    "answer_relevancy": 0.7450336700336699,
+    "faithfulness": 0.691631857421331,
+    "contextual_relevancy": 0.45631623767228546
+  },
+  "nltk_1024_256": {
+    "answer_relevancy": 0.7728326814147709,
+    "faithfulness": 0.6937132519222071,
+    "contextual_relevancy": 0.513352669708083
+  },
+  "nltk_512_128": {
+    "answer_relevancy": 0.7782344416147233,
+    "faithfulness": 0.7123561884125265,
+    "contextual_relevancy": 0.47002594092306277
+  },
+  "recursive_512_128": {
+    "answer_relevancy": 0.748025366446419,
+    "faithfulness": 0.7093035619351409,
+    "contextual_relevancy": 0.462851768114926
+  }
+}
